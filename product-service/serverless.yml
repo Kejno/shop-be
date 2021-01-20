@@ -19,7 +19,7 @@ plugins:
     - serverless-webpack
 custom:
     webpack:
-        webpackConfig: ../webpack.config.js
+        webpackConfig: webpack.config.js
         includeModules: true
 
 # You can pin your service to only deploy with a specific Serverless version
