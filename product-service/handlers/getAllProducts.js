@@ -78,7 +78,7 @@ export const getAllProducts = async (event) => {
     statusCode: 200,
     body: JSON.stringify({
       products,
-      input: event,
+      count: products.length
     }),
   };
 };

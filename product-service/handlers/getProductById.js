@@ -1,4 +1,4 @@
-export const getAllProducts = async (event) => {
+export const getProductById = async (event) => {
     const products = [
       {
         name: 'Airpods Wireless Bluetooth Headphones',
@@ -73,7 +73,7 @@ export const getAllProducts = async (event) => {
         numReviews: 12,
       },
     ];
-  
+  console.log(event)
     return {
       statusCode: 200,
       body: JSON.stringify({
