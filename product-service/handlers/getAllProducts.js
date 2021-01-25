@@ -1,6 +1,7 @@
-export const getAllProducts = async (event) => {
+export const getAllProducts = async () => {
   const products = [
     {
+      id: '5f7b49f5f691af2a6c262d87',
       name: 'Airpods Wireless Bluetooth Headphones',
       image: '/images/airpods.jpg',
       description:
@@ -11,8 +12,10 @@ export const getAllProducts = async (event) => {
       countInStock: 10,
       rating: 4.5,
       numReviews: 12,
+      user:'5f7b49f5f691af2a6c262d82'
     },
     {
+      id: '5f7b49f5f691af2a6c262d88',
       name: 'iPhone 11 Pro 256GB Memory',
       image: '/images/phone.jpg',
       description:
@@ -23,8 +26,10 @@ export const getAllProducts = async (event) => {
       countInStock: 7,
       rating: 4.0,
       numReviews: 8,
+      user:'5f7b49f5f691af2a6c262d82'
     },
     {
+      id: '5f7b49f5f691af2a6c262d89',
       name: 'Cannon EOS 80D DSLR Camera',
       image: '/images/camera.jpg',
       description:
@@ -35,8 +40,10 @@ export const getAllProducts = async (event) => {
       countInStock: 5,
       rating: 3,
       numReviews: 12,
+      user:'5f7b49f5f691af2a6c262d82'
     },
     {
+      id: '5f7b49f5f691af2a6c262d90',
       name: 'Sony Playstation 4 Pro White Version',
       image: '/images/playstation.jpg',
       description:
@@ -47,8 +54,10 @@ export const getAllProducts = async (event) => {
       countInStock: 11,
       rating: 5,
       numReviews: 12,
+      user:'5f7b49f5f691af2a6c262d82'
     },
     {
+      id: '5f7b49f5f691af2a6c262d91',
       name: 'Logitech G-Series Gaming Mouse',
       image: '/images/mouse.jpg',
       description:
@@ -59,8 +68,10 @@ export const getAllProducts = async (event) => {
       countInStock: 7,
       rating: 3.5,
       numReviews: 10,
+      user:'5f7b49f5f691af2a6c262d82'
     },
     {
+      id: '5f7b49f5f691af2a6c262d92',
       name: 'Amazon Echo Dot 3rd Generation',
       image: '/images/alexa.jpg',
       description:
@@ -71,6 +82,7 @@ export const getAllProducts = async (event) => {
       countInStock: 0,
       rating: 4,
       numReviews: 12,
+      user:'5f7b49f5f691af2a6c262d82'
     },
   ];
 
