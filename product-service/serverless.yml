@@ -1,17 +1,29 @@
 
 service: product-service
+
 plugins:
   - serverless-webpack
+
 custom:
   webpack:
     webpackConfig: webpack.config.js
     includeModules: true
+
 frameworkVersion: '2'
+
 provider:
   name: aws
   runtime: nodejs12.x
   stage: dev
   region: us-east-1
+
+  environment:
+    PG_HOST: shop-lesson-4.cartgdbgcd1a.us-east-1.rds.amazonaws.com
+    PG_PORT: 5432
+    PG_DATABASE: shopdb
+    PG_USERNAME: postgres
+    PG_PASSWORD: 5354431Am
+
 functions:
   getAllProducts:
     handler: handler.getAllProducts
@@ -19,12 +31,19 @@ functions:
       - http:
           path: products
           method: get
-          cors: true
+
   getProductById:
     handler: handler.getProductById
     events:
       - http:
           path: products/{id}
           method: get
-          cors: true
+
+  createProduct:
+    handler: handler.createProduct
+    events:
+      - http:
+          path: products
+          method: post
+
 
